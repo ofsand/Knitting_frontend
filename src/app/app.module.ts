@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -26,6 +26,9 @@ import { ManageCategoriesComponent } from './adminPages/manage-categories/manage
 import { ManageReviewsComponent } from './adminPages/manage-reviews/manage-reviews.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { SearchFieldComponent } from './components/search-field/search-field.component';
+import { CollectionsPageComponent } from './pages/collections-page/collections-page.component';
+import { ProductsPageComponent } from './pages/products-page/products-page.component';
+
 
 @NgModule({
   declarations: [
@@ -52,12 +55,15 @@ import { SearchFieldComponent } from './components/search-field/search-field.com
     ManageReviewsComponent,
     ProductCardComponent,
     SearchFieldComponent,
+    CollectionsPageComponent,
+    ProductsPageComponent,
+    routingComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
