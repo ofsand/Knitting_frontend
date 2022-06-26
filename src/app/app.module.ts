@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule, routingComponent } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -28,6 +28,9 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { SearchFieldComponent } from './components/search-field/search-field.component';
 import { CollectionsPageComponent } from './pages/collections-page/collections-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
+import { ProductsFiltrationComponent } from './components/products-filtration/products-filtration.component';
+import { SexeFilterComponent } from './components/sexe-filter/sexe-filter.component';
+import { AgeFilterComponent } from './components/age-filter/age-filter.component';
 
 
 @NgModule({
@@ -57,7 +60,10 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
     SearchFieldComponent,
     CollectionsPageComponent,
     ProductsPageComponent,
-    routingComponent
+    routingComponents,
+    ProductsFiltrationComponent,
+    SexeFilterComponent,
+    AgeFilterComponent
   ],
   imports: [
     AppRoutingModule,
