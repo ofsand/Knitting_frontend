@@ -3,10 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.screen-page-container {
-    height: calc(100vh - 112px);
-    //height: 100vh;
+body{
+  position: relative;
+  //min-height: 100vh;
 }
 
 /*Scroll bar costumization*/

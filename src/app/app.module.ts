@@ -31,6 +31,9 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { ProductsFiltrationComponent } from './components/products-filtration/products-filtration.component';
 import { SexeFilterComponent } from './components/sexe-filter/sexe-filter.component';
 import { AgeFilterComponent } from './components/age-filter/age-filter.component';
+import { ProductTypeComponent } from './components/product-type/product-type.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 
 @NgModule({
@@ -63,7 +66,10 @@ import { AgeFilterComponent } from './components/age-filter/age-filter.component
     routingComponents,
     ProductsFiltrationComponent,
     SexeFilterComponent,
-    AgeFilterComponent
+    AgeFilterComponent,
+    ProductTypeComponent,
+    LoginPageComponent,
+    LoginFormComponent
   ],
   imports: [
     AppRoutingModule,
